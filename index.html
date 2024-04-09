@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>KSU24 AI</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="plugin/chalkboard/style.css">
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+		<link rel="stylesheet" href="plugin/toolbar/toolbar.css">
+		<link rel="stylesheet" href="dist/myStyle.css"> 
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-autoslide="10"></section>
+				<section data-background-video="pics/startVideo.mp4" data-background-video-loop="true" style="margin-top: -80px;" data-autoslide="10000" data-background-video-muted>
+					<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 70vh;">
+						<div style="display: flex;">
+							<a href="https://www.kspu.edu/" style="margin-right: 20px;">
+								<img src="pics/MAIN LOGO color.png" style="height: 100px; width: 100%; margin-right: 10px;"> 
+							</a>
+							<a href="https://www.kspu.edu/About/Faculty/FPhysMathemInformatics.aspx">
+								<img src="pics/FCSPM_Logo.png" style="height: 100px; width: 100%; margin-right: 10px;"> 
+							</a>
+						</div>
+						<a href="https://ai.ksu24.kspu.edu/" style="margin-top: 20px;">
+							<h1 style="color: white; font-size: 120px;"><strong>KSU24.AI</strong></h1>
+						</a>
+						<p style="color: rgb(115, 222, 255); margin-top: 10px;">PERSONALIZATION OF LEARNING IN AN EDUCATIONAL ONLINE ENVIRONMENT</p>
+					  </div>
+					  <div style="display: flex; justify-content: space-between; font-size: 18px; height: 15vh;">
+					  	<div>Maksym Poltoratsky</div>
+						<div>Olha Konnova</div>
+					  </div>
+					  <div style="width: 100%; text-align: center;">
+						<div class="footer" style="padding: 10px; font-size: 15px; color: beige;">
+							<p>2024 © Kherson State University </p>
+							<p>at KSU.AI</p>
+						</div>
+					</div>															
+				</section>
+				<section data-menu-title="Our team" data-transition="convex-in concave-out" data-auto-animate>
+					<h3>Our team</h3>
+					<div class="team-container">
+						<div class="team-row">
+								<div class="team-member">
+									<img src="pics/Spivakovskyi.jpg" alt="Member 1">
+									<div class="name">O. V. Spivakovskyi</div>
+									<div class="position" style="height: 5vh;">Author of the idea and methodology</div>
+									<div class="social-icons">
+										<a href="https://www.facebook.com/spivakovsky.alexander" class="icon"><i class="fab fa-facebook"></i></a>
+										<a href="https://www.linkedin.com/in/oleksandr-spivakovskiy-4ba62954/" class="icon"><i class="fab fa-linkedin"></i></a>
+									</div>
+									<div class="qr-code-container">
+										<canvas class="qr-code"></canvas>
+									</div>
+								</div>
+							<div class="team-member">
+								<img src="pics/Vinnyk.jpg" alt="Member 2">
+								<div class="name">M. O. Vinnyk</div>
+								<div class="position" style="height: 5vh;">Responsible for financial planning</div>
+								<div class="social-icons">
+									<a href="https://www.facebook.com/profile.php?id=100049291414309" class="icon"><i class="fab fa-facebook"></i></a>
+									<a href="https://www.linkedin.com/in/maksym-vinnyk-28853369/" class="icon"><i class="fab fa-linkedin"></i></a>
+								</div>
+								<div class="qr-code-container">
+									<canvas class="qr-code"></canvas>
+								</div>
+						</div>
+						<div class="team-member">
+							<img src="pics/Lemeschuk.jpg" alt="Member 3">
+							<div class="name">O. I. Lemeschuk</div>
+							<div class="position" style="height: 5vh;">Project manager</div>
+							<div class="social-icons">
+								<a href="https://www.facebook.com/alexandr.lemeshchuk" class="icon"><i class="fab fa-facebook"></i></a>
+								<a href="https://www.linkedin.com/in/%D0%BE%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D1%96%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87-%D0%BB%D0%B5%D0%BC%D0%B5%D1%89%D1%83%D0%BA-223840291/" class="icon"><i class="fab fa-linkedin"></i></a>
+							</div>
+							<div class="qr-code-container">
+								<canvas class="qr-code"></canvas>
+							</div>
+					</div>
+					<div class="team-member">
+						<img src="pics/Poltoratskyi.jpg" alt="Member 4">
+						<div class="name">M. Yu. Poltoratsky</div>
+						<div class="position" style="height: 5vh;">Knowledge System Developer/Training artificial intelligence models</div>
+						<div class="social-icons">
+							<a href="https://www.facebook.com/makspoltorackii" class="icon"><i class="fab fa-facebook"></i></a>
+							<a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+						</div>
+						<!-- QR code container -->
+						<div class="qr-code-container">
+							<canvas class="qr-code"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="team-row">
+					<div class="team-member">
+						<img src="pics/Fomichev.jfif" alt="Member 7">
+						<div class="name">M. M. Fomichev</div>
+						<div class="position" style="height: 4vh;">QA engineer</div>
+						<div class="social-icons">
+							<a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+							<a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+						</div>
+						 <div class="qr-code-container">
+							<canvas class="qr-code"></canvas>
+						</div>
+					</div>
+					<div class="team-member">
+						<img src="pics/Konnova.jpg" alt="Member 5">
+						<div class="name">O. V. Konnova</div>
+						<div class="position" style="height: 4vh;">Full stack developer</div>
+						<div class="social-icons">
+							<a href="https://www.facebook.com/konnovaO/" class="icon"><i class="fab fa-facebook"></i></a>
+							<a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+						</div>
+						<div class="qr-code-container">
+							<canvas class="qr-code"></canvas>
+						</div>
+					</div>
+					<div class="team-member">
+						<img src="pics/Karpov.jfif" alt="Member 6">
+						<div class="name">I. V. Karpov</div>
+						<div class="position" style="height: 4vh;">Specialist in training artificial intelligence models</div>
+						<div class="social-icons">
+							<a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+							<a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+						</div>
+						<div class="qr-code-container">
+							<canvas class="qr-code"></canvas>
+						</div>
+					</div>
+					<div class="team-member">
+						<img src="pics/Cherkashina.jpg" alt="Member 8">
+						<div class="name">T. O. Cherkashina</div>
+						<div class="position" style="height: 4vh;">Expert in the field of educational management</div>
+						<div class="social-icons">
+							<a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+							<a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+						</div>
+						 <div class="qr-code-container">
+							<canvas class="qr-code"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-background="rgb(236,240,241)" data-transition="convex-in concave-out" data-auto-animate data-menu-title="Introduction">
+			<h4>Introduction</h4>
+			<p style="font-size: 20px; text-align: justify;">The goal of our project is to develop a methodology for creating intellectual assistants using the example of an educational management chatbot.</p>
+			<p style="font-size: 20px; text-align: justify;">It will solve the following tasks:</p>
+			<ul style="font-size: 20px; display: list-item;">
+				<li>Assistance in the formation of an individual educational trajectory and the study plan of a student of higher education, its implementation during the entire period of study;</li>
+				<li>Informing about the conditions and possibilities of practice-oriented training and research work according to the educational program chosen by the applicant;</li>
+				<li>Recommending to the applicant of higher education to take into account the results of informal education and academic mobility in higher education institutions of Ukraine or abroad when forming an individual study plan;</li>
+				<li>Advising students on the need to observe the norms of academic integrity and scientific ethics;</li>
+				<li>Informing the student of higher education about the procedure for solving and preventing conflict situations;</li>
+				<li>Advising students on the university's internal business processes.</li>
+			</ul>
+			
+		</section>	
+		<section data-menu-title="Microsoft Azure Machine Learning">
+			<h4>Microsoft Azure Machine Learning</h4>
+			<p>The advantages of Microsoft Azure include:</p>
+			<ul style="font-size: 20px; text-align: justify;">
+				<li>Wide functionality, a wide set of tools for the development, training and implementation of machine learning models. From data processing to creating models and monitoring their performance - all this is available on one platform.</li>
+				<li>Integration with other Azure services: Azure Machine Learning integrates with other Microsoft Azure cloud services, such as Azure Data Lake, Azure SQL Database, and Azure Cognitive Services. It allows you to easily process, store and analyze your data.</li>
+				<li>Simplified work with structured and unstructured data: The platform has tools for working with different types of data, including structured, semi-structured and unstructured data.</li>
+				<li>Advanced scaling capabilities: Azure Machine Learning provides advanced scaling capabilities for processing large amounts of data and training complex models.</li>
+				<li>Wide selection of integrated models and frameworks: The platform supports various machine learning frameworks such as TensorFlow, PyTorch, Scikit-learn and others.</li>
+			</ul>
+		</section>
+		<section data-background="rgb(236,240,241)" data-transition="convex-in concave-out" data-auto-animate data-menu-title="Preparation and presentation of data">
+			<h4>Preparation and presentation of data</h4>
+			<p style="font-size: 20px; text-align: justify;">
+				To create a model of educational management, we used data obtained from the following sources:
+			</p>
+				<ul style="font-size: 20px; text-align: left;">
+					<li>Job search sites (Work.ua, Robota.ua, and others)</li>
+					<li>Educational programs implemented at Kherson State University</li>
+					<li>Syllabi of educational components/learning disciplines</li>
+				</ul>
+			<p style="font-size: 20px; text-align: justify;">Having systematized the indicated data from job search sites (Work.ua, Robota.ua and others), as well as educational management documents, we developed a matrix of correspondence of vacancies with the necessary skills that are put forward to it, and educational components that cover the formation of these skills and competencies.</p>
+		</section>
+		<section data-transition="convex-in concave-out" data-auto-animate data-menu-title="Matrix of correspondence between disciplines, skills and vacancies">
+			<p style="font-size: 30px;">Matrix of correspondence between disciplines, skills and vacancies </br> Specialty: Software Engineering</p>
+			<table>
+				<thead>
+					<tr style="font-size: 15px;">
+						<th></th>
+						<th>Skills/Disciplines</th>
+						<th>Formal methods of software engineering</th>
+						<th>Full stack development</th>
+						<th>Software modeling and verification</th>
+						<th>Databases of distributed information systems</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td>Create and write technical documentation</td>
+						<td class="green-background"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Modeling language:UML</td>
+						<td class="green-background"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Modeling language:sysML</td>
+						<td class="green-background"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Frontend development</td>
+						<td></td>
+						<td class="green-background"></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Backend development</td>
+						<td></td>
+						<td class="green-background"></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Verification and optimization of software</td>
+						<td></td>
+						<td></td>
+						<td class="green-background"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Developing database</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="green-background"></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+		<section data-background="rgb(236,240,241)" data-transition="convex-in concave-out" data-auto-animate  data-menu-title="The process of collecting and preparing data for chatbot training">
+			<p style="font-size: 35px;">The process of collecting and preparing data for chatbot training</p>
+			<img src="pics/Process.png">
+			<p style="font-size: 17px; text-align: justify;">The process of collecting and preparing data for chatbot training includes the following stages:</p>
+			<ul style="font-size: 17px; display:list-item;">
+				<li>Data collection and preparation</li>
+				<li>Development of a knowledge engineering model (RDF model)</li>
+				<li>Broadcasting of the RDF model in the JSONL format</li>
+				<li>Chatbot training in the Microsoft Azure studio</li>
+			</ul>			
+		</section>	
+		<section data-background="rgb(236,240,241)">
+			<section data-background="black" data-menu-title="RDF notation">
+			<p style="font-size: 18px; color: whitesmoke;">RDF notation</p>
+			<pre><code style="font-size: 14px; line-height: 1; max-height: 700px;">
+					//Subject
+					<rdf:Description rdf:about="#SFMSE">
+					<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+					<rdfs:label>Formal methods of software engineering</rdfs:label>  
+					<rdfs:numberOfLectures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">
+						24
+					</rdfs:numberOfLectures>
+					<rdfs:numberOfLab rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"> 24 </rdfs:numberOfLab>
+					<rdfs:comment>
+						A course focusing on formal methods used in software engineering
+						for rigorous software development
+					</rdfs:comment>
+					<rdfs:syllabus>https://Link to the syllabus</rdfs:syllabus>
+					<rdfs:subClassOf rdf:resource="#Subject"/>  
+					</rdf:Description>
+
+					//Vacancy
+					<rdf:Description rdf:about="#VSE">
+					<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+					<rdfs:label>Software Engineer</rdfs:label>  
+					<rdfs:comment>
+						A professional involved in the design, development, testing,
+						and maintenance of software systems or applications, utilizing programming languages, tools, 
+						and methodologies to meet project requirements.
+				    </rdfs:comment>
+					<rdfs:subClassOf rdf:resource="#Vacancy"/>  
+					</rdf:Description>
+
+					//Skill
+					<rdf:Description rdf:about="#CUML">
+					<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+					<rdfs:label>
+						Modeling languages:UML
+					</rdfs:label>  
+					<rdfs:comment>
+						A proficiency in Unified Modeling Language (UML), a standardized 
+						general-purpose modeling language in the field of software engineering for visualizing, 
+						specifying, constructing, and documenting the artifacts of software systems
+					</rdfs:comment>
+					<rdfs:subClassOf rdf:resource="#Competencies"/></rdf:Description>
+				</code></pre>
+
+				<p style="font-size: 19px; color: whitesmoke;">Discipline&lt;SFMSE&gt; --(Provide)-->Skills[CUML,CSML,…]--(necessaryFor)--> Vacancy&lt;VSE&gt;</p>
+			</section>
+				<section data-background="rgb(236,240,241)" data-transition="convex-in concave-out" data-auto-animate data-menu-title="A fragment of the RDF model of Educational Management">
+					<h4>A fragment of the RDF model of Educational Management</h4>
+					<img src="pics/RDF.png" >
+					<p style="font-size: 18px; text-align: justify;">The matrix is an important tool in the context of knowledge engineering for a bot. It helps to determine which specific skills and competencies are necessary for various vacancies. In addition, this approach will make it possible to improve the integrity of the model.</p>
+				</section>
+		</section>
+		<section style="padding: 20px;">
+			<section data-menu-title="Preparation of JSONL">
+			<p style="font-size: 17px; text-align: justify;">
+				To train the algorithm, we chose the babbage-002/davinci-002 format for data presentation. Therefore, we are faced with the task of converting the resulting model into RDF, a JSONL format that Azure AI Studio accepts. Example of working JSONL, valid for training in Azure AI Studio:
+			</p>
+			<p style="font-size: 17px; text-align: justify;">
+				<strong>{"prompt": "Good afternoon, please tell me at which address to pick up the diploma from the KSU?", "completion": "Good afternoon, Ivano-Frankivsk, 14 Shevchenko Street."}</strong>
+			</p>
+			<p style="font-size: 17px; text-align: justify;">To transform the model, a special translator was developed in the Python programming language using special SPARQL queries.</p>
+				<pre style="width: 100%;">
+					<code data-trim style="font-size: 14px; line-height: 1; max-height: 500px;">
+							# SPARQL query
+							query = f"""
+							PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+							PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+							SELECT ?subclass_label ?comment
+							WHERE {{
+								?subclass rdfs:subClassOf <file://AIKSU.rdf#{search_criteria}> ;
+								rdfs:label ?subclass_label ;
+								rdfs:comment ?comment .
+							}}
+							"""
+						</code>
+					</pre>
+				<p style="font-size: 17px; text-align: justify;">The next step is to save the query results in JSONL format, which was presented above:</p>
+					<pre style="width: 100%;">
+						<code data-trim style="font-size: 14px; line-height: 1.1; max-height: 500px;">
+						# Execute SPARQL query and get results
+						result = g.query(query)
+
+						# Save results to a text file
+						with open(f"{search_criteria}.txt", "w", encoding="utf-8") as file:
+							for row in result:
+								result_dict = {
+									"prompt": str(row.subclass_label),
+									"completion": f"It is {search_criteria}
+									                    .{str(row.comment)}"
+								}
+								file.write(str(result_dict) + "\n")
+
+
+						</code>
+					</pre>
+				</section >
+				<section data-background="rgb(236,240,241)" data-menu-title="Training">
+					<h4>Training</h4>
+					<p style="font-size: 17px; text-align: justify;">The result of the parser was a JSONL file ready for use in Azure AI Studio. Below is a fragment of such a file:</p>
+					<p style="font-size: 20px; text-align: justify;"><strong>&emsp;{'prompt': 'Modeling languages:UML', 'completion': 'It is Competencies. A proficiency in Unified Modeling Language (UML), a standardized general-purpose modeling language in the field of software engineering for visualizing, specifying, constructing, and documenting the artifacts of software systems.'}
+						<br/>&emsp;{'prompt': 'Modeling languages:sysML', 'completion': 'It is Competencies. A proficiency in Systems Modeling Language (SysML), a general-purpose modeling language for systems engineering applications.'}
+					</strong></p>
+					<div style="display: flex; align-items: center;">
+						<div style="margin-right: 20px;">
+							<img src="pics/ModelsPage.png" style="height: 250px;">
+							<p style="font-size: 16px;">Models page</p>
+						</div>
+						<div>
+							<img src="pics/PlaygroundPage.png" alt="Playground" style="height: 250px;">
+							<p style="font-size: 16px;">Playground page</p>
+						</div>
+					</div>
+				</section>
+		</section>
+		<section data-background="rgb(236,240,241)" data-menu-title="Result of work">
+			<h4>Result of work</h4>
+				<div style="margin-right: 20px;">
+					<img src="pics/UserInterface.png" style="height: 350px; margin-bottom: 1px;">
+					<p style="font-size: 16px;">User interface of the assistant</p>
+				</div>
+			<p style="font-size: 19px; text-align: justify;">In the course of the work, a methodology for creating an intelligent chatbot in the field of educational management was developed. This chatbot will allow automating students' search queries, and will also be useful for advising students in choosing an individual learning path.
+				This methodology can be used not only in educational management, but also in other fields.</p>
+		</section>
+		<section data-background-video="pics/back.mp4" data-menu-title="Contact Information">
+				<div style="text-align: center;">
+					<p style="font-size: 55px;">
+						<a href="https://ai.ksu24.kspu.edu/" style="color: #000; text-decoration: underline">KSU.AI</a>
+					</p>
+					<div>
+						<img src="pics/ksuAIQR.png" style="height: 280px; width: 280px; margin-right: 10px; border-radius: 10%; box-shadow: #4a4a4a;">
+					</div>
+					<p style="font-size: 17px; color: #000;">You can find more details in the relevant articles:</p>
+					<p style="font-size: 20px; color: #000;">For more information, please contact us: <br/ ><a href="mailto:ksu.AI@gmail.com" style="color: #000">KSU.AI@gmail.com</a></p>
+				</div>
+		</section>					
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<script src="plugin/toolbar/toolbar.js"></script>
+		<script>
+			
+			Reveal.initialize({
+				autoSlide: 5000,
+				hash: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu],
+				dependencies: [{
+					src: 'node_modules/reveal_external/external/external.js', 
+					condition: function() { 
+					return !!document.querySelector( '[data-external],[data-external-replace]' ); 
+					} 
+				},
+				{ src: 'plugin/menu/menu.js' },
+				{ src: 'plugin/toolbar/toolbar.js' } 
+			],
+				menu: {
+					side: 'left',
+					width: 'normal',
+					numbers: true,
+					titleSelector: 'h1, h2, h3, h4, h5, h6',
+					useTextContentForMissingTitles: false,
+					hideMissingTitles: false,
+					markers: true,
+					custom: false,
+					themes: true,
+					themesPath: 'dist/theme/',
+					transitions: false,
+					openButton: true,
+					openSlideNumber: false,
+					keyboard: true,
+					sticky: false,
+					autoOpen: true,
+					delayInit: false,
+					openOnInit: false,
+					loadIcons: true
+				},
+				toolbar: {
+					position: 'top',
+					fullscreen: true,
+					overview: true,
+					pause: true,
+					notes: false,
+					help: false,
+					captureMenu: true,
+					capturePlaybackControl: true,
+					loadIcons: true
+				}
+			});
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var urls = [
+					'https://www.kspu.edu/About/UniversityAdministration/ABC.aspx',
+					'https://sites.google.com/view/maksymvinnyk/main-page?authuser=2',
+					'https://www.kspu.edu/About/Faculty/FPhysMathemInformatics/ChairInformatics/Staff/Lemeschuk.aspx',
+					'https://sites.google.com/site/maksympoltorackiy/home?authuser=0',
+					'https://sites.google.com/view/olga-konnova/main?authuser=0',
+					'https://ai.ksu24.kspu.edu/#h.rnwn6wmezuqr',
+					'https://ai.ksu24.kspu.edu/#h.nwnkyd3p76i5',
+					'https://www.kspu.edu/About/DepartmentAndServices/QAssurance/employees.aspx'
+				];
+		
+				var qrCodeContainers = document.querySelectorAll('.qr-code');
+				qrCodeContainers.forEach(function(qrCodeContainer, index) {
+					var qrCode = new QRious({
+						element: qrCodeContainer,
+						size: 150,
+						value: urls[index],
+						background: 'transparent',
+						foreground: 'white'
+					});
+				});
+			});
+		</script>		
+	</body>
+</html>
