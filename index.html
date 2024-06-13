@@ -22,29 +22,24 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-autoslide="10"></section>
-				<section data-background-video="pics/startVideo.mp4" data-background-video-loop="true" style="margin-top: -80px;" data-autoslide="10000" data-background-video-muted>
+				<section data-background-video="pics/startVideo.mp4" data-background-video-loop="true" style="margin-top: -30px;" data-autoslide="10000" data-background-video-muted>
 					<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 70vh;">
 						<div style="display: flex;">
-							<a href="https://www.kspu.edu/" style="margin-right: 20px;">
-								<img src="pics/MAIN LOGO color.png" style="height: 100px; width: 100%; margin-right: 10px;"> 
-							</a>
-							<a href="https://www.kspu.edu/About/Faculty/FPhysMathemInformatics.aspx">
-								<img src="pics/FCSPM_Logo.png" style="height: 100px; width: 100%; margin-right: 10px;"> 
+							<a href="#" style="margin-right: 20px;">
+								<img src="pics/Eva.png" style="height: 100px; width: 100%; margin-right: 10px;"> 
 							</a>
 						</div>
-						<a href="https://ai.ksu24.kspu.edu/" style="margin-top: 20px;">
-							<h1 style="color: white; font-size: 120px;"><strong>KSU24.AI</strong></h1>
-						</a>
-						<p style="color: rgb(115, 222, 255); margin-top: 10px;">PERSONALIZATION OF LEARNING IN AN EDUCATIONAL ONLINE ENVIRONMENT</p>
+						<h1 style="color: white; font-size: 110px; background-color: rgba(36, 37, 42, 0.5); margin-top: 40px;"><strong>Chatbot &laquo;Eva&raquo;</strong></h1>
+						<p style="color: rgb(115, 222, 255); margin-top: 5px; margin-bottom: 20px; background-color: rgba(36, 37, 42, 0.5);">PERSONALIZATION OF LEARNING IN AN EDUCATIONAL ONLINE ENVIRONMENT</p>
 					  </div>
-					  <div style="display: flex; justify-content: space-between; font-size: 18px; height: 15vh;">
+					  <div style="display: flex; justify-content: space-between; font-size: 18px; height: 15vh; margin-bottom: 30px;">
 					  	<div>Maksym Poltoratsky</div>
 						<div>Olha Konnova</div>
 					  </div>
 					  <div style="width: 100%; text-align: center;">
 						<div class="footer" style="padding: 10px; font-size: 15px; color: beige;">
 							<p>2024 © Kherson State University </p>
-							<p>at KSU.AI</p>
+							<a href="https://ai.ksu24.kspu.edu/" style="font-size: 15px; color: azure;">KSU.AI</a>
 						</div>
 					</div>															
 				</section>
@@ -154,10 +149,18 @@
 				</div>
 			</div>
 		</section>
-		<section data-background="rgb(236,240,241)" data-transition="convex-in concave-out" data-auto-animate data-menu-title="Introduction">
-			<h4>Introduction</h4>
-			<p style="font-size: 20px; text-align: justify;">The goal of our project is to develop a methodology for creating intellectual assistants using the example of an educational management chatbot.</p>
-			<p style="font-size: 20px; text-align: justify;">It will solve the following tasks:</p>
+		<section data-menu-title="Project idea" data-transition="convex-in concave-out" data-auto-animate>
+			<h4>Project idea</h4>
+			<p style="text-align: justify; font-size: 30px;">Our project introduces a comprehensive methodology for creating intelligent assistants powered by artificial intelligence using the example of an education management chatbot. <strong> However, the proposed approach is universal and can be used to create intelligent assistants in any industry.</strong>
+				In this presentation we describe the concept of development of the assistant and the technologies that were used to create it.
+				</p>
+		</section>
+		<section data-menu-title="Eva" data-background="rgb(236,240,241)" data-transition="convex-in concave-out" data-auto-animate>
+			<div class="eva-container">
+				<p style="text-align: justify; font-size: 30px;">An intelligent chatbot for personalized educational management &laquo;Eva&raquo; was created</p>
+				<img src="pics/Eva.png" alt="Eva Logo" width="200" height="200" style="margin-left: 30px;">
+			</div>
+			<p style="font-size: 20px; text-align: justify;">An <strong> educational management chatbot </strong> is used at Kherson State University to perform various administrative and educational tasks:</p>
 			<ul style="font-size: 20px; display: list-item;">
 				<li>Assistance in the formation of an individual educational trajectory and the study plan of a student of higher education, its implementation during the entire period of study;</li>
 				<li>Informing about the conditions and possibilities of practice-oriented training and research work according to the educational program chosen by the applicant;</li>
@@ -166,8 +169,29 @@
 				<li>Informing the student of higher education about the procedure for solving and preventing conflict situations;</li>
 				<li>Advising students on the university's internal business processes.</li>
 			</ul>
-			
 		</section>	
+		<section data-menu-title="Technologies" data-background="rgb(236,240,241)" data-transition="convex-in concave-out" data-auto-animate>
+			<h4>TECHNOLOGIES</h4>
+			<p style="text-align: justify; font-size: 30px;">To develop an intelligent ChatBot we will use the following list of technologies:</p>
+			<div class="tech-container">
+				<div class="tech-column">
+					<p style="font-size: 30px;">
+						<strong>Knowledge model: RDF</strong><br>Development of the educational management model
+					</p>
+				</div>
+				<div class="tech-column">
+					<p style="font-size: 26px;">
+						<strong>Translator RdfToJsonl: Python, SPARQL</strong> <br>Automatic translation of RDF model to JSON.
+						Azure AI Studio accepts files in JSONL format for creating and configuring artificial intelligence models, including chatbots						
+					</p>
+				</div>
+				<div class="tech-column">
+					<p style="font-size: 26px;">
+						<strong>Platform: Microsoft Azure ML</strong><br>Microsoft Azure Machine Learning is a cloud platform for creating, training and implementing artificial intelligence models. It provides tools for developing and experimenting with various machine learning and deep learning algorithms, as well as for automating model training processes.
+					</p>
+				</div>
+			</div>
+		</section>
 		<section data-menu-title="Microsoft Azure Machine Learning">
 			<h4>Microsoft Azure Machine Learning</h4>
 			<p>The advantages of Microsoft Azure include:</p>
@@ -400,6 +424,13 @@
 				</div>
 			<p style="font-size: 19px; text-align: justify;">In the course of the work, a methodology for creating an intelligent chatbot in the field of educational management was developed. This chatbot will allow automating students' search queries, and will also be useful for advising students in choosing an individual learning path.
 				This methodology can be used not only in educational management, but also in other fields.</p>
+		</section>
+		<section data-background="rgb(236,240,241)" data-menu-title="Rewards">
+			<div class="inline-container" style="display: flex; align-items: center">
+				<img src="pics/Certificate.png" alt="Certificate" width="450" height="550" style="margin-right: 40px;">
+				<span style="font-size: 25px;">The project won in the nomination "Improvement of distance learning systems" of the XIII International Festival of Innovative Projects
+					"Sikorsky Challenge 2024" within the International Forum "Artificial Intelligence: Global Dialogue"</span>
+			</div>
 		</section>
 		<section data-background-video="pics/back.mp4" data-menu-title="Contact Information">
 				<div style="text-align: center;">
